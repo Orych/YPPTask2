@@ -6,21 +6,26 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout репозитория
         uses: actions/checkout@v3
 
-      - name: Install dependencies
+      - name: Установка Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Установка зависимостей
         run: npm install
 
-      - name: Build project
+      - name: Генерация статического сайта
         run: npm run generate
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Развёртывание на GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-pages
-          folder: .output/public
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
