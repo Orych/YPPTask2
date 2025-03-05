@@ -23,7 +23,7 @@
   
 <script setup>
   const resume = {
-    name: "Иван Иванов",
+    name: "Видякин Егор Викторович",
     position: "Frontend-разработчик",
     experience: [
       { company: "Компания A", position: "Разработчик", years: "2021-2023" },
