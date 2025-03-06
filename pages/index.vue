@@ -26,10 +26,19 @@
     name: "Видякин Егор Викторович",
     position: "Frontend-разработчик",
     experience: [
-      { company: "Компания A", position: "Разработчик", years: "2021-2023" },
-      { company: "Компания B", position: "Стажёр", years: "2020-2021" }
+      { company: "Network Graphics", position: "Frontend-разработчик", years: "2021-2025" },
+      { company: "Ispring", position: "Frontend-разработчик, стажёр", years: "2020-2021" }
     ],
-    skills: ["Vue.js", "Nuxt.js", "JavaScript", "CSS", "GitHub Actions"]
+    skills: [
+      "Vue 2", 
+      "Vue 3",
+      "Electron js",
+      "Node.js",
+      "JavaScript", 
+      "CSS", 
+      "SCSS",
+      "Git"
+    ]
   };
 </script>
   

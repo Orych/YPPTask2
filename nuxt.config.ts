@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   app: {
-    baseURL: '/my-resume/' // замените на название вашего репозитория
+    baseURL: '/my-resume/'
   },
 
   // Добавляем режим статической генерации
